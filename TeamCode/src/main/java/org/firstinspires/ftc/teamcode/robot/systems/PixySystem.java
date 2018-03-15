@@ -5,6 +5,7 @@ import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.hardware.Servo;
 import org.firstinspires.ftc.teamcode.hardware.pixycam.PixyCam;
+import org.firstinspires.ftc.teamcode.robot.systems.common.System;
 
 @Autonomous(name="PixySystem", group="Bot")
 public class PixySystem extends System {

@@ -2,19 +2,10 @@ package org.firstinspires.ftc.teamcode.robot.systems;
 
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;
-import com.qualcomm.robotcore.hardware.AnalogInput;
-
-import com.qualcomm.robotcore.hardware.HardwareMap;
-import com.qualcomm.robotcore.hardware.ServoImplEx;
 
 import org.firstinspires.ftc.teamcode.robot.components.DcMotorServo;
-import org.firstinspires.ftc.teamcode.teleop.ControllerOpMode;
-import org.firstinspires.ftc.teamcode.util.config.*;
+import org.firstinspires.ftc.teamcode.robot.systems.common.System;
 import org.firstinspires.ftc.robotcore.external.Telemetry;
-import org.firstinspires.ftc.teamcode.util.config.ConfigParser;
-
-import java.io.FileNotFoundException;
-import java.io.IOException;
 
 /**
  * Created by jacks on 1/8/2018.

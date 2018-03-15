@@ -1,4 +1,4 @@
-package org.firstinspires.ftc.teamcode.robot.systems;
+package org.firstinspires.ftc.teamcode.robot.systems.common;
 
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 import com.qualcomm.robotcore.hardware.HardwareMap;
@@ -23,13 +23,13 @@ public abstract class System {
 
     public Logger logger;
 
-    public System(OpMode opMode, String system) {
+    public System(OpMode opMode, String systemName) {
         this.map = opMode.hardwareMap;
-        this.system = system;
-        this.fileName = system + ".omc";
+        this.system = systemName;
+        this.fileName = systemName + ".omc";
         this.telemetry = opMode.telemetry;
         this.config = new ConfigParser(fileName);
-        this.logger = new Logger(opMode, system);
+        this.logger = new Logger(opMode, systemName);
     }
 
     public void setDefaultLoggingServices(LoggingService... services) {
