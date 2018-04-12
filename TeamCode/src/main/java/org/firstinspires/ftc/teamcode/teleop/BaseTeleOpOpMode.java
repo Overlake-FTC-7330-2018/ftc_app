@@ -16,7 +16,7 @@ import org.firstinspires.ftc.teamcode.util.logger.LoggingService;
  * Created by EvanCoulson on 10/11/17.
  */
 
-public abstract class BaseOpMode extends OpMode {
+public abstract class BaseTeleOpOpMode extends OpMode {
     protected final ConfigParser config;
     protected Controller controller1;
     protected Controller controller2;
@@ -27,7 +27,7 @@ public abstract class BaseOpMode extends OpMode {
     protected Logger logger;
 
 
-    public BaseOpMode(String opModeName) {
+    public BaseTeleOpOpMode(String opModeName) {
         this.logger = new Logger(this, opModeName);
         logger.setLoggingServices(LoggingService.FILE);
         this.config = new ConfigParser(opModeName + ".omc");

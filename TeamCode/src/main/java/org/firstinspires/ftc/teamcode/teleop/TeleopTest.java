@@ -4,17 +4,13 @@ package org.firstinspires.ftc.teamcode.teleop;
  * Created by EvanCoulson on 9/26/17.
  */
 
-import com.qualcomm.hardware.bosch.BNO055IMU;
-import com.qualcomm.robotcore.eventloop.opmode.Disabled;
-import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 
 import org.firstinspires.ftc.teamcode.robot.systems.IMUSystem;
-import org.firstinspires.ftc.teamcode.util.config.ConfigParser;
 import org.firstinspires.ftc.teamcode.util.logger.LoggingService;
 
 @TeleOp(name="TeleOpTest", group="TeleOp")
-public class TeleopTest extends BaseOpMode {
+public class TeleopTest extends BaseTeleOpOpMode {
     private IMUSystem imu;
 
     public TeleopTest() {

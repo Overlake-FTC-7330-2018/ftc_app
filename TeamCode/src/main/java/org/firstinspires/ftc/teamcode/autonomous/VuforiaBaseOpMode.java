@@ -18,7 +18,7 @@ import org.firstinspires.ftc.robotcore.external.matrices.OpenGLMatrix;
 
 
 
-public abstract class VuforiaBaseOpMode extends BaseOpMode {
+public abstract class VuforiaBaseOpMode extends BaseAutonomousOpMode {
 
     protected static class Target {
         public static int Wheels = 0;
