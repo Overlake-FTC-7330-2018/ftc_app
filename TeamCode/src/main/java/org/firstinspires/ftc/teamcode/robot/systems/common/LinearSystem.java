@@ -19,7 +19,7 @@ public class LinearSystem extends System {
       */
     protected double[] positions;
 
-    public LinearSystem(OpMode opMode, String systemName) { super(opMode, systemName); }
+    public LinearSystem(OpMode opMode, String systemName) {
         super(opMode, systemName);
 
         this.positions = new double[config.getInt("arraySize")];
