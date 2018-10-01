@@ -15,7 +15,7 @@ import org.firstinspires.ftc.teamcode.config.ConfigParser;
  * Created by EvanCoulson on 10/11/17.
  */
 
-public abstract class BaseOpMode extends LinearOpMode
+public abstract class BaseAutonomousOpMode extends LinearOpMode
 {
     public ConfigParser config;
     public MecanumDriveSystem driveSystem;
@@ -26,7 +26,7 @@ public abstract class BaseOpMode extends LinearOpMode
     public ClawSystemNoMergeConflictPlease claw;
     public ParallelLiftSystem parallelLiftSystem;
 
-    public BaseOpMode(String opModeName)
+    public BaseAutonomousOpMode(String opModeName)
     {
         config = new ConfigParser(opModeName + ".omc");
         telemetry.setMsTransmissionInterval(200);
